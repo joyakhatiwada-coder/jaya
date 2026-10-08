@@ -5,7 +5,7 @@
   <title>My First Web Page</title>
 </head>
 <body>
-  <h1>Hello! I am dotel jaya laxmi</h1>
+  <h1>Hello! I am Dotel Jaya Laxmi</h1>
   <p>I am from nepal. I am studying Computer Science at Seoul Theological University.</p>
     <p>My English typing speed measured this week is 32 WPM.</p> 
      <h2>My Favorite Photo</h2>
@@ -35,17 +35,17 @@
   <h2 id="guestbook">Leave a Message (Guestbook)</h2>
   <form>
     <p>
-      <label for="visitor-name">Your Name:</label><br>
+      <label for="visitor-name">: jaya laxmi dotel</label><br>
       <input type="text" id="visitor-name" name="visitor-name" placeholder="e.g., Alex Kim" required>
     </p>
 
     <p>
-      <label for="visitor-email">Your Email:</label><br>
+      <label for="visitor-email"> jayalaxmi@gmail.com:</label><br>
       <input type="email" id="visitor-email" name="visitor-email" placeholder="name@example.com" required>
     </p>
 
     <p>
-      <label for="visitor-message">Your Message:</label><br>
+      <label for="visitor-message"> i like korean culture:</label><br>
       <textarea id="visitor-message" name="visitor-message" rows="4" cols="45" placeholder="Share your greeting, feedback, or thoughts..."></textarea>
     </p>
 
@@ -54,20 +54,6 @@
     </p>
   </form>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Online Business Card</title>
-  
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="card">
-    <h1 id="profile-name">jaya Laxmi Dotel</h1>
-    <p class="card-info">Computer Engineering Student | Seoul, Korea</p>
-  </div>
 
 </body>
 
@@ -76,7 +62,87 @@
   letter-spacing: -0.5px;
 }
 
+
+    
+    <div class="buttons">
+      <button class="btn">Contact Me</button>
+      <button class="btn">GitHub</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
 .card-info {
   color: #b3b3b3;
   font-size: 15px;
   line-height: 1.6;}
+    /* Global Reset - Universal Box-Sizing Standard */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card Styling (Mission 1 Requirements) */
+.card {
+  width: 350px;
+  background-color: #ffffff;
+  
+  /* Border requirement */
+  border: 2px solid #333333;
+  
+  /* Padding requirement (Inner breathing room) */
+  padding: 20px;
+  
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Heading & Paragraph Margins (Social Distancing) */
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+/* Button Styling & Spacing */
+.button-group {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  /* Margin-right to separate buttons */
+  margin-right: 15px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
